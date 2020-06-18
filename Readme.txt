@@ -1,6 +1,3 @@
-Thanks for downloading this theme!
+This right here is United Aryan's Second website ready for adoption!
 
-Theme Name: Eterna
-Theme URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+find it at https://elducati.github.io/united-aryan-website-2/
