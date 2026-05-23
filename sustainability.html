@@ -1,313 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>UNITED ARYAN (EPZ) LTD</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Your page description here" />
-    <meta name="author" content="" />
-  
-    <!-- css -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
-    <link href="css/flexslider.css" rel="stylesheet" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
-    <link href="css/camera.css" rel="stylesheet" />
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-  
-    <!-- Theme skin -->
-    <link href="color/default.css" rel="stylesheet" />
-  
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
-    <link rel="shortcut icon" href="ico/favicon.png" />
-  
-    <!-- =======================================================
-      Theme Name: Eterna
-      Theme URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
-  </head>
-  
-  <body>
-  
-    <div id="wrapper">
-  
-      <!-- start header -->
-      <header>
-        <div class="container" style="margin-top: 20px;">
-  
-  
-          <div class="row nomargin">
-            <div class="span2">
-              <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="" /></a>
-              </div>
-            </div>
-            <div class="span10">
-              <div class="navbar navbar-static-top">
-                <div class="navigation">
-                  <nav>
-                    <ul class="nav topnav">
-                      <li class="dropdown">
-                        <a href="index.html"><i class="icon-home"></i> HOME</a>
-                       
-                      </li>
-                      
-                      <li class="dropdown">
-                        <a href="#">OUR COMPANY <i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="about.html">ABOUT US</a></li>
-                          <li><a target="_blank" href="assets/UAL - Company Profile.pdf">COMPANY PROFILE</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">WHAT WE DO<i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="productline.html">PRODUCT LINE</a></li>
-                          <li><a href="logistics.html">LOGISTICS</a></li>
-                          <li><a href="customerserved.html">CUSTOMERS SERVED</a></li>
-                          <li><a href="facility.html">FACILITY</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">PRODUCTS <i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="productprofile.html">PRODUCT PROFILE</a></li>
-                          <li><a href="">WOVEN PRODUCTS</a></li>
-                          <li><a href="knit.html">KNIT PRODUCTS</a></li>
-                         </ul>
-                      </li>
-  
-                      <li class="dropdown active">
-                        <a href="sustainability.html">SUSTAINABILITY</a>
-                      </li>
-                     
-                      <li class="dropdown">
-                        <a href="#">INFRASTRUCTURE<i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="infrastructure.html">INFRASTRUCTURE</a></li>
-                            <li><a href="gallery.html">FACTORY PHOTOS</a></li>
-                          </ul>
-                      </li>
-                      <li>
-                        <a href="contact.html">CONTACT </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <!-- end navigation -->
-              </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <title>Sustainability — United Aryan (EPZ) Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="United Aryan EPZ Ltd's sustainability commitments — green manufacturing, worker health programs, community support, and networking with local organisations in Nairobi, Kenya.">
+  <meta name="author" content="United Aryan EPZ Ltd">
+  <link rel="shortcut icon" href="ico/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/revamp.css">
+  <style>
+    /* Sustainability-specific green accent overrides */
+    .sustain-accent { color: #10B981; }
+    .ual-pillar--green-border { border-top-color: #10B981; }
+    .ual-pillar--blue-border  { border-top-color: #3B82F6; }
+    .ual-pillar--amber-border { border-top-color: #F59E0B; }
+
+    /* Commitment metric strip */
+    .ual-commit-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--sp-6);
+      background: linear-gradient(135deg, #064E3B, #065F46);
+      border-radius: var(--r-xl);
+      padding: var(--sp-10) var(--sp-8);
+      margin: var(--sp-12) 0;
+    }
+    .ual-commit-metric { text-align: center; padding: var(--sp-4); }
+    .ual-commit-metric__num {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 900;
+      color: #6EE7B7;
+      line-height: 1;
+      margin-bottom: var(--sp-2);
+    }
+    .ual-commit-metric__label {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.65);
+    }
+    @media (max-width: 768px) {
+      .ual-commit-strip { grid-template-columns: 1fr; gap: var(--sp-4); }
+    }
+  </style>
+</head>
+
+<body class="ual-revamp">
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════════ -->
+  <nav class="ual-nav" id="main-nav" aria-label="Main navigation">
+    <div class="ual-nav__inner">
+      <a href="index.html" class="ual-nav__logo" aria-label="United Aryan home">
+        <img src="img/logo.png" alt="United Aryan EPZ Ltd logo">
+      </a>
+      <ul class="ual-nav__links" role="list">
+        <li class="ual-nav__item">
+          <a href="index.html" class="ual-nav__link" id="nav-home">Home</a>
+        </li>
+        <li class="ual-nav__item">
+          <a href="#" class="ual-nav__link" id="nav-company">
+            Our Company
+            <svg class="ual-nav__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+          </a>
+          <ul class="ual-nav__dropdown" role="list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="assets/UAL - Company Profile.pdf" target="_blank" rel="noopener">Company Profile</a></li>
+          </ul>
+        </li>
+        <li class="ual-nav__item">
+          <a href="#" class="ual-nav__link" id="nav-whatwedo">
+            What We Do
+            <svg class="ual-nav__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+          </a>
+          <ul class="ual-nav__dropdown" role="list">
+            <li><a href="productline.html">Product Line</a></li>
+            <li><a href="logistics.html">Logistics</a></li>
+            <li><a href="customerserved.html">Customers Served</a></li>
+            <li><a href="facility.html">Facility</a></li>
+          </ul>
+        </li>
+        <li class="ual-nav__item">
+          <a href="#" class="ual-nav__link" id="nav-products">
+            Products
+            <svg class="ual-nav__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+          </a>
+          <ul class="ual-nav__dropdown" role="list">
+            <li><a href="productprofile.html">Product Profile</a></li>
+            <li><a href="woven.html">Woven Products</a></li>
+            <li><a href="knit.html">Knit Products</a></li>
+          </ul>
+        </li>
+        <li class="ual-nav__item">
+          <a href="sustainability.html" class="ual-nav__link active" id="nav-sustain">Sustainability</a>
+        </li>
+        <li class="ual-nav__item">
+          <a href="#" class="ual-nav__link" id="nav-infra">
+            Infrastructure
+            <svg class="ual-nav__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+          </a>
+          <ul class="ual-nav__dropdown" role="list">
+            <li><a href="infrastructure.html">Infrastructure</a></li>
+            <li><a href="gallery.html">Factory Photos</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a href="contact.html" class="ual-nav__cta" id="nav-contact-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 11.27a19.79 19.79 0 01-3-8.56A2 2 0 012.39 2.7h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 10.1a16 16 0 006 6l1.27-.76a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.03z"/></svg>
+        Contact Us
+      </a>
+      <button class="ual-nav__hamburger" id="ual-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="ual-nav__bar"></span>
+        <span class="ual-nav__bar"></span>
+        <span class="ual-nav__bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="ual-nav__mobile" id="ual-mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html" class="ual-nav__mobile-link">Home</a>
+    <div class="ual-nav__mobile-link" style="cursor:default;">Our Company</div>
+    <div class="ual-nav__mobile-sub">
+      <a href="about.html">About Us</a>
+      <a href="assets/UAL - Company Profile.pdf" target="_blank" rel="noopener">Company Profile</a>
+    </div>
+    <div class="ual-nav__mobile-link" style="cursor:default;">What We Do</div>
+    <div class="ual-nav__mobile-sub">
+      <a href="productline.html">Product Line</a>
+      <a href="logistics.html">Logistics</a>
+      <a href="customerserved.html">Customers Served</a>
+      <a href="facility.html">Facility</a>
+    </div>
+    <div class="ual-nav__mobile-link" style="cursor:default;">Products</div>
+    <div class="ual-nav__mobile-sub">
+      <a href="productprofile.html">Product Profile</a>
+      <a href="woven.html">Woven Products</a>
+      <a href="knit.html">Knit Products</a>
+    </div>
+    <a href="sustainability.html" class="ual-nav__mobile-link">Sustainability</a>
+    <div class="ual-nav__mobile-link" style="cursor:default;">Infrastructure</div>
+    <div class="ual-nav__mobile-sub">
+      <a href="infrastructure.html">Infrastructure</a>
+      <a href="gallery.html">Factory Photos</a>
+    </div>
+    <a href="contact.html" class="ual-nav__mobile-link">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PAGE HERO
+  ══════════════════════════════════════════════════════════ -->
+  <section class="ual-page-hero" aria-label="Sustainability hero">
+    <img src="assets/images/banner/sustainability.jpg" alt="Green sustainability at United Aryan EPZ" class="ual-page-hero__img" loading="eager">
+    <div class="ual-page-hero__overlay" aria-hidden="true" style="background:linear-gradient(to right,rgba(4,40,30,.82) 0%,rgba(6,60,40,.5) 55%,rgba(0,137,123,.2) 100%);"></div>
+    <div class="ual-page-hero__content">
+      <div class="ual-container">
+        <nav class="ual-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="ual-breadcrumb__sep" aria-hidden="true">›</span>
+          <span class="current">Sustainability</span>
+        </nav>
+        <h1 class="ual-page-hero__title">Our Sustainability Commitment</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       INTRO + COMMITMENT METRICS
+  ══════════════════════════════════════════════════════════ -->
+  <section class="ual-section" id="sustain-intro" aria-labelledby="sustain-intro-heading">
+    <div class="ual-container">
+      <div class="ual-section-header ual-reveal">
+        <span class="ual-eyebrow">People · Planet · Prosperity</span>
+        <h2 class="ual-h2" id="sustain-intro-heading">Building a Responsible Business</h2>
+        <p class="ual-lead">From green technology investments to community healthcare and sports sponsorship, we are committed to creating a lasting positive impact far beyond the factory floor.</p>
+      </div>
+
+      <!-- Green metrics strip -->
+      <div class="ual-commit-strip ual-reveal">
+        <div class="ual-commit-metric">
+          <div class="ual-commit-metric__num">1.8 MW</div>
+          <div class="ual-commit-metric__label">Solar Power Installed</div>
+        </div>
+        <div class="ual-commit-metric">
+          <div class="ual-commit-metric__num">33,000 T</div>
+          <div class="ual-commit-metric__label">Carbon Footprint Saved (lifetime)</div>
+        </div>
+        <div class="ual-commit-metric">
+          <div class="ual-commit-metric__num">2M L/day</div>
+          <div class="ual-commit-metric__label">Effluent Treatment Capacity</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOUR PILLAR CARDS
+  ══════════════════════════════════════════════════════════ -->
+  <section class="ual-section ual-section--alt" id="pillars" aria-labelledby="pillars-heading">
+    <div class="ual-container">
+      <div class="ual-section-header ual-reveal">
+        <span class="ual-eyebrow">Four Dimensions</span>
+        <h2 class="ual-h2" id="pillars-heading">How We Make a Difference</h2>
+      </div>
+
+      <div class="ual-grid-2 ual-stagger">
+
+        <!-- Pillar 1: Go Green -->
+        <div class="ual-pillar ual-pillar--green-border">
+          <div class="ual-pillar__icon ual-pillar__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v8M8 12h8"/>
+            </svg>
+          </div>
+          <h3 class="ual-pillar__title">Go-Green Initiatives</h3>
+          <div class="ual-pillar__list">
+            <div class="ual-pillar__item"><p>Investing in latest sustainable technology — LESS water, chemicals, energy and discharge in Washing &amp; Dry Process using Laser Technology to produce 120,000 units a day.</p></div>
+            <div class="ual-pillar__item"><p>Use of certified green chemicals and ZHDC-certified chemical inputs across all production processes.</p></div>
+            <div class="ual-pillar__item"><p>Installing an Effluent Treatment Plant with capacity of 2,000,000 litres/day — fully recycling treated water.</p></div>
+            <div class="ual-pillar__item"><p>1.8 Mega Watts of Solar power — equivalent to saving 33,000 tons of carbon and 65,000 trees over its lifetime.</p></div>
+            <div class="ual-pillar__item"><p>Increased use of recycled raw materials throughout production.</p></div>
           </div>
         </div>
-      </header>
-    <!-- end header -->
 
-    <section id="inner-headline">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <div class="inner-heading">
-              <ul class="breadcrumb">
-                <li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
-                <li><a href="#">SUSTAINABILITY</a> <i class="icon-angle-right"></i></li>
-                <li class="active">Sustainability</li>
-              </ul>
-              <img src="/assets/images/banner/sustainability.jpg" alt="">
-              <h2>Sustainability</h2>
+        <!-- Pillar 2: Medical & Health -->
+        <div class="ual-pillar ual-pillar--blue-border">
+          <div class="ual-pillar__icon ual-pillar__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h3 class="ual-pillar__title">Medical &amp; Health Benefits</h3>
+          <div class="ual-pillar__list">
+            <div class="ual-pillar__item"><p>Arranging comprehensive medical and life insurance coverage for all our workers and their immediate families.</p></div>
+            <div class="ual-pillar__item"><p>Running health awareness programmes including HIV Sensitization, early detection tests for cervical and breast cancer, eye testing, and gynecological screening.</p></div>
+            <div class="ual-pillar__item"><p>On-site medical facilities to ensure quick access to healthcare for our entire workforce.</p></div>
+          </div>
+        </div>
 
-            </div>
+        <!-- Pillar 3: Community Support -->
+        <div class="ual-pillar ual-pillar--amber-border">
+          <div class="ual-pillar__icon ual-pillar__icon--amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3 class="ual-pillar__title">Community Support</h3>
+          <div class="ual-pillar__list">
+            <div class="ual-pillar__item"><p>Supporting local schools, orphanages and old-age homes in our neighbourhood — contributing to the social fabric of the community.</p></div>
+            <div class="ual-pillar__item"><p>Extending sponsorship to underprivileged bright students in our community, investing in the next generation of leaders.</p></div>
+            <div class="ual-pillar__item"><p>Supporting a football team of talented players from our workforce — who have already won the 2nd Division League and are now part of the national Super League.</p></div>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Networking & Collaboration -->
+        <div class="ual-pillar">
+          <div class="ual-pillar__icon ual-pillar__icon--teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--ual-teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+          </div>
+          <h3 class="ual-pillar__title">Networking &amp; Collaboration</h3>
+          <p style="font-size:14px; color:var(--text-secondary); margin-bottom:var(--sp-4); line-height:1.65;">We partner with government and non-government organisations that enhance the wellbeing of our surrounding community:</p>
+          <div class="ual-pillar__list">
+            <div class="ual-pillar__item"><p><strong style="color:var(--text-primary);">St. Joseph Catholic Church, Mulolongo</strong> — offering technical training to local unemployed youth.</p></div>
+            <div class="ual-pillar__item"><p><strong style="color:var(--text-primary);">Shadrack Juma Foundation, Baba Dogo</strong> — training women and single mothers in the art of garment making.</p></div>
+            <div class="ual-pillar__item"><p><strong style="color:var(--text-primary);">Kenya Women Children Wellness Centre</strong> — eliminating gender-based violence and building entrepreneurship skills for financial liberation.</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CTA
+  ══════════════════════════════════════════════════════════ -->
+  <section class="ual-section" style="background:linear-gradient(135deg,#064E3B,#065F46); padding:var(--sp-16) 0;" aria-labelledby="sustain-cta-heading">
+    <div class="ual-container" style="text-align:center;">
+      <span class="ual-eyebrow" style="color:rgba(110,231,183,0.7);">Responsible Manufacturing</span>
+      <h2 class="ual-h2" id="sustain-cta-heading" style="color:var(--white); margin-bottom:var(--sp-4);">Partner With a Responsible Manufacturer</h2>
+      <p style="font-size:1.05rem; color:rgba(255,255,255,0.75); max-width:520px; margin:0 auto var(--sp-8); line-height:1.7;">Our sustainability commitments meet and exceed international standards. Work with us for traceable, ethical, green manufacturing.</p>
+      <div style="display:flex; gap:var(--sp-4); justify-content:center; flex-wrap:wrap;">
+        <a href="contact.html" class="ual-btn" style="background:var(--white); color:#065F46; font-weight:800;" id="sustain-cta">Get in Touch</a>
+        <a href="about.html" class="ual-btn ual-btn--secondary" id="sustain-about-cta">Learn About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer class="ual-footer" aria-label="Site footer">
+    <div class="ual-container">
+      <div class="ual-footer__grid">
+        <div>
+          <img src="img/logo.png" alt="United Aryan EPZ Ltd" class="ual-footer__logo">
+          <p class="ual-footer__tagline">A world-class garment manufacturer in Kenya's Export Processing Zone, delivering premium apparel to the USA and Europe since 2002.</p>
+          <div style="display:flex; gap:var(--sp-3);">
+            <span class="ual-pill" style="background:rgba(0,137,123,.15); border-color:rgba(0,137,123,.3); color:var(--ual-teal-light);">AGOA Certified</span>
+            <span class="ual-pill" style="background:rgba(0,137,123,.15); border-color:rgba(0,137,123,.3); color:var(--ual-teal-light);">EPZ Member</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="ual-footer__heading">Quick Links</h3>
+          <ul class="ual-footer__links" role="list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="productline.html">Product Line</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="gallery.html">Factory Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="assets/UAL - Company Profile.pdf" target="_blank" rel="noopener">Company Profile PDF</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="ual-footer__heading">Group Companies</h3>
+          <ul class="ual-footer__links" role="list">
+            <li><a href="http://www.ronexintl.com/" target="_blank" rel="noopener">Ronex International L.L.C</a></li>
+            <li><a href="#">Pan Global Merchants, Abidjan</a></li>
+            <li><a href="#">United Exports, New Delhi</a></li>
+            <li><a href="#">Crowne Plaza Suryaa, India</a></li>
+            <li><a href="#">Balaji Export Processing Zone</a></li>
+            <li><a href="#">Growmore General Trading, Kuwait</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="ual-footer__heading">Contact</h3>
+          <div class="ual-footer__contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>P.O Box 126, Village Market,<br>Postal Code 00621, Nairobi, Kenya</span>
+          </div>
+          <div class="ual-footer__contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 11.27a19.79 19.79 0 01-3-8.56A2 2 0 012.39 2.7h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 10.1a16 16 0 006 6l1.27-.76a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.03z"/></svg>
+            <span>+254 20 2396197 / 98<br>+254 722 202092</span>
+          </div>
+          <div class="ual-footer__contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>admin@unitedaryan.net</span>
           </div>
         </div>
       </div>
-    </section>
+      <div class="ual-footer__bar">
+        <p class="ual-footer__copy">&copy; <span id="footer-year"></span> <span>United Aryan EPZ Ltd.</span> All rights reserved.</p>
+        <p class="ual-footer__copy">Nairobi, Kenya · AGOA Export Partner</p>
+      </div>
+    </div>
+  </footer>
 
-    <section id="latest-news">
-        <div class="container">
-          <div class="col-md-12">
-            <div class="blog-archive-area">
-              <br />
-              <!-- <h3 style="color:#2bcdc1;">Customer Served</h3> -->
-              <div class="container row">
-                <div class="container col-md-8" style="width:100%;">
-                  <div class="blog-archive-left">
-                    <!-- Start blog news single -->
+  <button class="ual-scroll-top" id="ual-scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
-                    <div class="container">
-                        <li style=" list-style-type: none;"><span style="color:#e96b56;">Go-Green Initiatives</span>
-                      <div align="justify" class="content">
-                        <ol style=" list-style-type: circle;">
-                          <li>Investing in latest & most sustainable technology which is 
-                            LESS-water, chemicals, energy and discharge in Washing & Dry 
-                            Process with Laser Technology to produce 120,000 units a day, 
-                            expected to start in Q2 2020.</li>
-                            <li>Use of certified green chemicals and ZHDC certified chemicals</li>
-                          <li>Installing Effluent Treatment Plant by Q2 2020 with capacity of 
-                            2000000 liters/day & recycle it.</li>
-                            <li>Installing 1.8 Mega Watts of Solar power to make it 
-                              Green manufacturing, this is equivalent to saving 33000 tons of 
-                              carbon footprint & 65000 trees in its lifetime.</li>
-                              <li>Increased use of Recycled raw material.</li>
-                        <br />
-                    
-    
-                        
-                      </div>
-                      <div style="clear:both"></div>
-                      <br />
-
-
-                      <li style=" list-style-type: none;"><span style="color:#e96b56;">Medical & Health Benefits</span></li>
-                        <ol style=" list-style-type: circle;">
-                        <li>Arranging medical and life insurance for our workers.</li>
-                        <li>We run health awareness programs such as 
-                          HIV Sensitization / Support early detection tests for 
-                          cervical & breast cancer / EYE testing / Gynecological testing.</li>
-                        </ol>
-                      
-                    </ol>
-                    <br>
-                     
-                      <li style=" list-style-type: none;"><span style="color:#e96b56;">Support</span> </li>
-                        <ol style=" list-style-type: circle;">
-                        <li>Supporting school, Orphanage & Old Age homes in our neighborhood.</li>
-                        <li>Extending sponsorship to under privileged bright 
-                          students in our community.</li>
-                          <li>Supporting football team of bright players from out worker, 
-                            who have already won 2nd division league and are part of 
-                            national super league now.</li>
-                        </ol>
-                      
-                    
-                    <br>
-                     
-                      <li style=" list-style-type: none;"><span style="color:#e96b56;">Networking and Collaboration</span></li>
-                      <p> We take special interest in networking and collaborating with 
-                      other govt and non-govt organisations those who deals with and 
-                      enhances the wellbeing of the community around us. Like :</p>
-                        <ol style=" list-style-type: circle;">
-                        <li>St. Joseph Catholic Church Mulolongo – offering technical 
-                          training to local   unemployed youth</li>
-                          <li>Shadrack Juma Foundation Baba Dogo – training women & Single 
-                            mothers with art of garment making.
-                          </li>
-                          <li>Kenya women Children Wellness Centre – implementation of 
-                            progs to eliminate gender-based violence, eliminate cultural 
-                            barriers that prevents women from financial liberation through 
-                            capacity building on entrepreneurship skills</li>
-                        </ol>
-                      
-                    
-              
-            
-
-              
-    
-              
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="span4">
-              <div class="widget">
-                <h5 class="widgetheading">Enterprises Managed by the Promoters</h5>
-                <ul class="link-list">
-                  <li><a href="http://www.ronexintl.com/" target="_blank">Ronex International L.L.C</a></li>
-                  <li><a href="panglobal.html">Pan Global Merchants, Abidjan</a></li>
-                  <li><a href="unified.html">United Exports, New Delhi, India</a></li>
-                  <li><a href="suryaa.html">Crowne Plaza Suryaa, New Delhi, India</a></li>
-                  <li><a href="#">Balaji Export Processing Zone</a></li>
-                  <li><a href="#">Suman Shakti EPZ Ltd</a></li>
-                  <li><a href="growmore.html">Growmore General Trading, Kuwait</a></li>
-                  <li><a href="sidi.html">SIDI, Abidjan</a></li>
-                </ul>
-  
-              </div>
-            </div>
-            <div class="span4">
-              
-            </div>
-            <div class="span4">
-              <div class="widget">
-                <h5 class="widgetheading">Contact Information</h5>
-                
-                <p>
-                  <i class="icon-phone"></i>  Tel:+254 20 2396197 / 98 <br>
-                  <i class="icon-phone"></i>  Mob: +254 722 202092/ +254 734 666001<br>
-                  <i class="icon-envelope-alt"></i> admin@unitedaryan.net
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="sub-footer">
-          <div class="container">
-            <div class="row">
-              <div class="span6">
-                <div class="copyright">
-                  <p><span>&copy; United Aryan EPZ. All right reserved</span></p>
-                </div>
-  
-              </div>
-  
-              <div class="span6">
-                <div class="credits">
-                  <!--
-                    All the links in the footer should remain intact.
-                    You can delete the links only if you purchased the pro version.
-                    Licensing information: https://bootstrapmade.com/license/
-                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Eterna
-                  -->
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-  </div>
-  <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
-
-  <!-- javascript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/bootstrap.js"></script>
-
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/toucheffects.js"></script>
-  <script src="js/google-code-prettify/prettify.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/portfolio/jquery.quicksand.js"></script>
-  <script src="js/portfolio/setting.js"></script>
-
-  <script src="js/jquery.flexslider.js"></script>
-  <script src="js/animate.js"></script>
-  <script src="js/inview.js"></script>
-
-  <!-- Template Custom JavaScript File -->
-  <script src="js/custom.js"></script>
-
-
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="js/revamp.js"></script>
 </body>
-
 </html>
